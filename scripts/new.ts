@@ -27,7 +27,6 @@ if(!validNMPPackageName.test(newPackageName)) {
 if(fs.existsSync(newPackagePath)){
     console.log(chalk.red("🛑 Component already exists!"));
     process.exit(0)
-
 }
 
 // button-group ButtonGroup
@@ -41,3 +40,29 @@ console.log('✅ created ' + newPackagePath)
 fs.mkdirSync(newPackagePath);
 fs.mkdirSync(newPackagePath + '/src');
 
+import indexVue from "./templates/indexVue";
+import packageJson from "./templates/packageJson";
+import indexTs from "./templates/indexTs";
+
+const filesToCreate = [
+    {
+        filepath: '/src/index.vue',
+        content: indexVue({packageName: newPackageNameCamelCase})
+    },
+    {
+        filepath: "/package.json",
+        content: packageJson({ packageName: newPackageName }),
+    },
+    {
+        filepath: "/index.ts",
+        content: indexTs({ packageName: newPackageNameCamelCase }),
+    },
+]
+
+filesToCreate.forEach((file) => {
+    const fileBuffer = new Uint8Array(Buffer.from(file.content))
+    fs.writeFileSync(newPackagePath + file.filepath, fileBuffer);
+    console.log(`✅ created ${newPackagePath}${file.filepath}`)
+})
+
+console.log("🚀 done creating " + chalk.green(newPackageName) + "!")
