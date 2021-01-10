@@ -1,7 +1,7 @@
 <template>
-  <div class="lcs-Button">
-    <!-- your html -->
-  </div>
+  <button class="lcs-Button">
+    <slot />
+  </button>
 </template>
 
 <script lang="ts">
@@ -15,8 +15,3 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-.lcs-Button {
-  /* your style */
-}
-</style>
