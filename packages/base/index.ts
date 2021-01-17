@@ -1,3 +1,7 @@
-import Base from "./src/index.vue";
+import colors from "./colors/exports.scss"
 
-export default Base;
+const base = {
+    colors,
+}
+
+export { base }

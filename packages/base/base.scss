@@ -1,0 +1,14 @@
+// reset
+@use "./reset.scss";
+
+// exports
+@use "./colors/exports.scss";
+
+body,
+[data-theme] {
+    background: var(--bkg-color);
+}
+
+::selection{
+    background: var(--act-color);
+}

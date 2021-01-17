@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+[data-theme] {
+    --text-color: #{$text-color};
+    --bkg-color: #{$bkg-color};
+    --act-color: #{$act-color};
+    --bkg-logo: #{$bkg-logo};
+}
+
+:export {
+    textColor: #{$text-color};
+    bkgColor: #{$bkg-color};
+    actColor: #{$act-color};
+    bkgLogo: #{$bkg-logo};
+}

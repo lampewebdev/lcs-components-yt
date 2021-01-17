@@ -7,6 +7,7 @@
     "lint": "npx eslint -f codeframe --config='../../.eslintrc.js' --ext ts,vue ./"
   },
   "dependencies": {
+    "@lcs-components/base": "file:../packages/base",
     "@lcs-components/button": "file:../packages/button"
   },
   "devDependencies": {

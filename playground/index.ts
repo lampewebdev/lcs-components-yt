@@ -1,3 +1,5 @@
+import "@lcs-components/base/base.scss"
+
 import { createApp } from "vue";
 import Playground from "./Playground.vue";
 

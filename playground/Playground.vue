@@ -1,5 +1,5 @@
 <template>
-  <div class="playground">
+  <div class="playground" data-theme="default">
       Hello World
       <lcs-button>
           Button

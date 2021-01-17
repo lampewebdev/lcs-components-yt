@@ -2,6 +2,7 @@
   "include": [
     "./packages/**/*",
     "./typings/**/*",
+    "./playground/**/*"
   ],
   "exclude": [
     "node_modules"
