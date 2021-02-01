@@ -2,11 +2,15 @@
 @use "./reset.scss";
 
 // exports
-@use "./colors/exports.scss";
+@use "./colors/exports.scss" as colors;
+@use "./typography/exports.scss" as typography;
 
 body,
 [data-theme] {
     background: var(--bkg-color);
+
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
 }
 
 ::selection{
