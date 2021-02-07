@@ -4,6 +4,7 @@
 // exports
 @use "./colors/exports.scss" as colors;
 @use "./typography/exports.scss" as typography;
+@use "./elevation/exports.scss" as elevation;
 
 body,
 [data-theme] {

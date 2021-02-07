@@ -51,7 +51,7 @@
       </lcs-button>
     </div>
   </div>
-    <div class="playground" data-theme="oled">
+  <div class="playground" data-theme="oled">
     <h1>Theme oled</h1>
     <div>
       <lcs-button>
@@ -77,6 +77,15 @@
       </lcs-button>
     </div>
   </div>
+
+  <div class="elevation">
+    <lcs-button> No Elevation </lcs-button>
+    <lcs-button class="elevation-1"> Elevation 1</lcs-button>
+    <lcs-button class="elevation-2"> Elevation 2</lcs-button>
+    <lcs-button class="elevation-3"> Elevation 3</lcs-button>
+    <lcs-button class="elevation-4"> Elevation 4</lcs-button>
+    <lcs-button class="elevation-5"> Elevation 5</lcs-button>
+  </div>
 </template>
 
 <script>
@@ -89,4 +98,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.elevation {
+  padding: 70px;
+  display: grid;
+  row-gap: 40px;
+}
+</style>
