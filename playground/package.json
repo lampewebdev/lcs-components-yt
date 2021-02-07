@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "@lcs-components/base": "file:../packages/base",
-    "@lcs-components/button": "file:../packages/button"
+    "@lcs-components/button": "file:../packages/button",
+    "@lcs-components/theme-default": "file:../packages/theme-default"
   },
   "devDependencies": {
     "eslint": "^7.17.0"

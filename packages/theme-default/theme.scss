@@ -1,0 +1,14 @@
+[data-theme="dark"] {
+  --text-color: #f6f6f6;
+  --bkg-color: #1a1c20;
+
+  --text-color: red;
+  --bkg-color: green;
+  --act-color: blue;
+}
+
+[data-theme="oled"] {
+  --text-color: #f6f6f6;
+  --bkg-color: #000;
+  --bkg-logo: #000;
+}
